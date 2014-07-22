@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 
         watch: {
             less: {
-                files: ['/less/**/*.less'],
+                files: ['less/**/*.less'],
                 tasks: ['less', 'autoprefixer', 'cssmin']
             }
         },
@@ -139,6 +139,17 @@ module.exports = function (grunt) {
                     dest: 'fonts/font-awesome/',
                     src: [
                         'font-awesome/fonts/*.{otf,eot,svg,ttf,woff}'
+                    ]
+                }]
+            },
+            opensans: {
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    cwd: '<%= c.bower %>/',
+                    dest: 'fonts/open-sans/',
+                    src: [
+                        'open-sans-fontface/fonts/*/*.{otf,eot,svg,ttf,woff}'
                     ]
                 }]
             }

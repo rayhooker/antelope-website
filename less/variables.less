@@ -1,3 +1,17 @@
+////////////////////////////////////////////////////////////////////////
+// External configuration                                             //
+////////////////////////////////////////////////////////////////////////
+
+@fa-font-path: '../fonts/font-awesome';
+
+// This overrides Glyphicons paths in Bootstrap:
+// It is rather hacky since the fonts don’t share the same characters.
+// But it will fix a few errors trying to fetch fonts that don’t exist.
+// (we don’t want glyphicons)
+@icon-font-path: 'fonts/font-awesome/';
+@icon-font-name: 'fontawesome-webfont';
+@icon-font-svg-id: 'fontawesomeregular';
+
 //
 // Variables
 // --------------------------------------------------
@@ -44,7 +58,7 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif: 'Open Sans',  'Helvetica Neue', Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;

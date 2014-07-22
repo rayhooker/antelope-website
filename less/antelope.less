@@ -5,8 +5,13 @@
       color: @navbar-default-brand-hover-color;
       background-color: @navbar-default-brand-hover-bg;
     }
+    @media screen and (max-width: 568px) {
+    	height: 60px;
+    }
 }
-
+#content { 
+	margin: 0 auto;
+}
 .copyright {
 	margin-top: 30px;
 	font-size: (@font-size-base);
@@ -27,23 +32,28 @@ p, .p {
 	color: white;
 	background-color: @antelope-green;	
 	background-image: url("/images/globe.png");
+	backgroung-repeat: norepeat;
 	padding-left: 60px;
 	padding-right: 60px;
+	@media screen and (max-width: 568px) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 .ourpurpose {
 		margin-left: 0;
 		margin-right: 0;
 	}
 .welcoming-title{
-	font-family: ff-meta-serif-web-pro, serif;
-	font-size: (@font-size-base * 3)  !important;
+	//font-family: ff-meta-serif-web-pro, serif;
+	font-size: (@font-size-base * 2.8)  !important;
 	@media screen and (max-width: 568px) {
             font-size: (@font-size-base * 2) !important;
     }
 }
 .welcoming-subtitle{
-	font-family: ff-meta-serif-web-pro, serif;
-	font-size: 32px; 
+	//font-family: ff-meta-serif-web-pro, serif;
+	font-size: 24px; 
 	@media screen and (max-width: 568px) {
             font-size: (@font-size-base * 1) !important;
     }
@@ -61,6 +71,20 @@ p, .p {
 	.div {
 		display:inline;
 	}
+}
+.equationBox {
+	border-radius: 5%;
+	height: 150px;
+	width: 150px;
+	color: black;
+	font-weight: 200;
+	border-style: solid;
+	border-width: 8px;
+	border-color: #ccd4d6;
+	padding: 10px;
+	padding-top: 25px;
+	display: inline-block;
+
 }
 .navbar {
 	border: none;
